@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>   مرحبا بكم في متصفح  إسطنبول</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+
+<!-- header section starts -->
+
+<header>
+
+<nav>
+    <ul>
+        <li><a href="about.html">للمزيد</a></li>
+        <li><a href="gallery.html">صور  </a></li>
+        <li><a href="videos.html">فيديوهات  </a></li>
+
+        <li><a href="index.html">صفحة الرئيسة</a></li>
+        
+
+    </ul>
+</nav>
+
+<div class="fas fa-bars"></div>
+
+<a href="#" class="logo"><h1>مدينة إسطنبول</h1></a>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts -->
+
+<section id="home">
+
+   <div class="content">
+
+    <h1>مرحبا, <br>
+    بكم  <span>في متصفح مدينة إسطنبول </span>
+    </h1>
+
+    
+
+    <a href="about.html"><button> اضغط للمزيد</button></a>
+
+
+
+   </div> 
+
+
+   <div class="image">
+       <img src="images/OIP-removebg-preview.png" alt="">
+   </div>
+
+</section>
+
+<!-- home section ends -->
+
+
+<!-- about section starts  -->
+
+<section id="about">
+
+<h1>معلومات عن مدينة إسطنبول</h1>
+
+<div class="wrapper">
+
+<div class="image">
+    <img src="images/pic2.png" alt="">
+</div>
+
+<div class="content">
+    <h3>مدينة إسطنبول</h3>
+    <p>هل انت معجب لهذه المدينة؟</p><br>
+    <p>إسطنبول (بالتركية الحديثة: ؛ وبالتركية العثمانية: استانبول)، والمعروفة تاريخيًا باسم بيزنطة والقُسْطَنْطِيْنِيَّة والأسِتانة وإسلامبول؛ وهي أكبر مدينة في تركيا، ويُنظر إليها كمركز اقتصادي، ثقافي وتاريخي للبلاد. تمتد المدينة على مضيق البوسفور، وتقع في كل من أوروبا وآسيا، حيث يبلغ عدد سكانها أكثر من 15 مليون نسمة، ويشكلون 19٪ من سكان تركيا. إسطنبول هي المدينة الأوروبية الأكثر اكتظاظًا بالسكان، والمدينة الخامسة عشر في العالم. تُعد إسطنبول مدينة كبرى، حيث تغطي مساحة المدينة 39 مقاطعة تُشكل محافظة اسطنبول. تطوق إسطنبول المرفأ الطبيعي المعروف باسم ”القرن الذهبي“  الواقع في شمال غرب البلاد، المعروفة قديمًا باسم
+         ”تراقيا.</p>
+    <a href="about.html"><button> اضغط للمزيد</button></a>
+</div>
+
+</div>
+
+</section>
+
+<!-- about section ends  -->
+
+
+<!-- work section starts  -->
+
+<section id="work">
+
+<h1>بعض الصور</h1>
+
+<div class="box-container">
+
+<div class="box">
+    <img src="images/1.jpg" alt="">
+    
+</div>
+
+<div class="box">
+    <img src="images/2.jpg" alt="">
+    
+</div>
+
+<div class="box">
+    <img src="images/3.jpg" alt="">
+    
+</div>
+
+<div class="box">
+    <img src="images/4.jpg" alt="">
+    
+</div>
+
+<div class="box">
+    <img src="images/5.jpg" alt="">
+    
+</div>
+
+<div class="box">
+    <img src="images/6.jpg" alt="">
+    
+</div>
+
+</div>
+
+</section>
+
+<!-- work section ends  -->
+
+
+
+
+
+<!-- footer section starts  -->
+
+<section id="footer">
+
+    <a href="#" class="logo"><h1>شكرا لكم في زيارتكم في متصفحنا</h1></a>
+
+ 
+    <h1>&copy; حقوق محفوظة  <span>طلاب صف عاشر</span></h1>
+
+</section>
+
+<!-- footer section ends  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jquery/js part -->
+
+
+<script>
+
+$(document).ready(function(){
+
+    $('.fa-bars').click(function(){
+        $(this).toggleClass('fa-times');
+        $('nav').toggleClass('nav-toggle');
+    });
+
+    $('nav ul li a').click(function(){
+        $('.fa-bars').removeClass('fa-times');
+        $('nav').removeClass('nav-toggle');
+    });
+
+    $(window).scroll(function(){
+        if($(window).scrollTop() < 20){
+            $('header').css('box-shadow','none');
+        }else{
+            $('header').css('box-shadow','0 .2rem .5rem #333');
+        }
+    });
+
+});
+
+</script>
+
+</body> 
+</html>
